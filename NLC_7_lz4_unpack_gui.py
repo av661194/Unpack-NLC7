@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-xr_db_lz4_unpack_gui.py - GUI-распаковщик S.T.A.L.K.E.R. (X-Ray) архивов .db0/.db1/...
+NLC_7_lz4_unpack_gui.py - GUI-распаковщик S.T.A.L.K.E.R. (X-Ray) архивов .db .xdb
 Формат: чанки + таблица файлов, данные LZ4F (нестандартная обёртка).
 
 Зависимости: только стандартная библиотека (Tkinter).
@@ -133,7 +133,7 @@ def dname(e):
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("X-Ray DB LZ4 Unpacker")
+        self.title("NLC 7 DB LZ4 Unpacker")
         self.geometry("900x620")
         self.db = None
         self.files = []
