@@ -96,6 +96,7 @@ def load_archive(path):
     for cid, off, sz, trunc in chunks:
         if (cid & 0x7FFFFFFF) == 1 and table is None:
             table = unwrap(db[off:off + sz]) if cid & 0x80000000 else db[off:off + sz]
+            open("dbb_table.bin", "wb").write(table)
     if table is None:
         raise ValueError("Таблица файлов (чанк 1) не найдена")
     ents, used, total = parse_table(table)
