@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-NLC_7_lz4_unpack_gui.py - GUI-распаковщик S.T.A.L.K.E.R. (X-Ray) архивов .db .xdb
+NLC_7_lz4_unpack_gui.py - GUI-распаковщик S.T.A.L.K.E.R. (NLC 7) архивов .db .xdb
 Формат: чанки + таблица файлов, данные LZ4F (нестандартная обёртка).
 
 Зависимости: только стандартная библиотека (Tkinter).
