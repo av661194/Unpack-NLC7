@@ -188,7 +188,7 @@ class App(tk.Tk):
 
         self.progress = ttk.Progressbar(self, mode="determinate")
         self.progress.pack(fill="x", padx=8)
-        self.status = tk.StringVar(value="Готово. Откройте .db0/.db1 архив.")
+        self.status = tk.StringVar(value="Готово. Откройте .db/.xdb архив.")
         ttk.Label(self, textvariable=self.status, padding=(8, 4), anchor="w").pack(fill="x")
         self.log = tk.Text(self, height=8, state="disabled")
         self.log.pack(fill="both", expand=False, padx=8, pady=(0, 8))
