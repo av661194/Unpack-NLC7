@@ -11,9 +11,11 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install PyInstaller
-        run: pip install pyinstaller
+        #run: pip install pyinstaller
+        run: pip install --upgrade pip pyinstaller lz4
       - name: Build EXE
-        run: pyinstaller --onefile --windowed --icon=icon.ico NLC_7_lz4_unpack_gui.py
+        #run: pyinstaller --onefile --windowed --icon=icon.ico NLC_7_lz4_unpack_gui.py
+        run: pyinstaller --onefile --windowed --collect-all lz4 --icon=icon.ico NLC_7_lz4_pack_gui.py
       - name: Upload EXE
         uses: actions/upload-artifact@v4
         with:
