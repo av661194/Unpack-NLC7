@@ -20,5 +20,5 @@ jobs:
       - name: Upload EXE
         uses: actions/upload-artifact@v4
         with:
-          name: MyProgram-EXE
+          name: Unpack_NLC7-EXE
           path: dist/*.exe
